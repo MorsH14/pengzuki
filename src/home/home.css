@@ -1,0 +1,165 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background: #F5E8C7;
+    color: #33c976;
+    min-height: 100vh;
+}
+
+.leftContainer{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.rightContainer{
+    background-color: #3A6351;
+    font-size: 22px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.imgContainer{
+    width: 99%;
+    background: #d4f0e6;
+    background-image: url(/public/assets/nft-removebg-preview.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 30px;
+    padding: 200px 0px;
+    border: 15px solid black;
+    border-radius: 15px;
+
+    h2{
+        font-size: 70px;
+        color: #dfcc9c;
+        padding-left: 70px;
+    }
+}
+.rightUl{
+    padding: 20px 0;
+    flex: 1;
+}
+li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 0; 
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+li:hover{
+    background: #f5e8c7d2;
+}
+
+.joinButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background: #F5E8C7;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .joinButton:hover {
+    background: #f5e8c7b7;
+  }
+  .slidesContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .leftSlides{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 220px;
+    border-radius: 20px;
+    background: #d4f0e6;
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .rightContainer{
+        display: none;
+    }
+
+    .imgContainer{
+        
+
+        h2{
+            font-size: 45px;
+            margin-top: -100px;
+            text-align: center;margin-left: -50px;
+        }
+    }
+
+    .slidesContainer{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .leftSlides{
+        width: 100%;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .leftContainer{
+
+        h1{
+            font-size: 25px;
+        }
+    }
+    .dropDown{
+        overflow: hidden;
+    }
+    .MediarightContainer {
+        background-color: #3A6351;
+        font-size: 22px;
+        padding: 20px;
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+      }
+      
+      .MediarightContainer.show {
+        display: flex; 
+        transition: all 0.3s ease-in-out; /* Smooth transition */
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
+}
