@@ -3,7 +3,6 @@
     grid-template-columns: 80% 20%;
     background: #F5E8C7;
     color: #33c976;
-    min-height: 100vh;
 }
 
 .leftContainer{
@@ -16,14 +15,6 @@
 .dropDown{
     display: none;
 }
-
-.MediarightContainer{
-    display: none;
-}
-.MediarightContainer.show {
-    display: none;
-}
-
 .rightContainer{
     background-color: #3A6351;
     font-size: 22px;
@@ -41,7 +32,7 @@
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 700px;
     margin-top: 30px;
     padding: 200px 0px;
     border: 15px solid black;
@@ -96,6 +87,7 @@ li:hover{
     align-items: center;
     width: 100%;
     padding: 20px;
+    margin-top: -50px;
   }
 
   .leftSlides{
@@ -152,6 +144,7 @@ li:hover{
     }
     .dropDown{
         overflow: hidden;
+        display: block;
     }
     .MediarightContainer {
         background-color: #3A6351;
@@ -174,4 +167,3 @@ li:hover{
         overflow: hidden;
       }
 }
-

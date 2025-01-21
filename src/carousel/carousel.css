@@ -9,10 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  padding: 0 20px;
 }
 
 .image {
-  width: 100%;
+  width: auto;
   height: 150px;
   object-fit: cover;
 }
@@ -57,7 +59,8 @@
   }
 
   .image {
-    height: 100px;
+    min-height: 100px;
+    width: auto;
   }
 
   .text {
