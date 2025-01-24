@@ -15,7 +15,15 @@ const Home = () => {
 
   const handleClick = () => {
     setDropDown(!dropdown);
+
+    if (!dropdown) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   };
+
+  
 
   const img = [
     {img:'/assets/n3.png',
@@ -28,6 +36,7 @@ const Home = () => {
       background: 'yellow'
     }
   ]
+  
 
   return (
     <div className="mainContainer" id="home">
@@ -68,11 +77,8 @@ const Home = () => {
             COLLECTION
           </li>
           </a>
-        </ul>
 
-              <div className="bottomUL">
-              <ul>
-            <a href="https://x.com/PengZuki_">            
+          <a href="https://x.com/PengZuki_">            
             <li>
               <FaXTwitter />
               FOLLOW ON X
@@ -91,9 +97,11 @@ const Home = () => {
               FOLLOW ON ATLAS
             </li>
             </a>
-          </ul>
-          <button className="joinButton">JOIN THE CLUB</button>
-              </div>
+            <a href="/submit">
+            <button className="joinButton">JOIN THE CLUB</button>
+            </a>
+        </ul>
+
             </div>
           </div>
         </div>
@@ -154,7 +162,9 @@ const Home = () => {
             </li>
             </a>
           </ul>
-          <button className="joinButton">JOIN THE CLUB</button>
+         <a href="/submit">
+         <button className="joinButton">JOIN THE CLUB</button>
+         </a>
         </div>
       </div>
       <div className="slidesContainer">
