@@ -22,3 +22,8 @@ code {
   text-decoration: none;
   list-style: none;
 }
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
