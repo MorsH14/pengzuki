@@ -1,12 +1,13 @@
 .mainContainer{
     display: grid;
     grid-template-columns: 80% 20%;
-    background: #F5E8C7;
+    background: whitesmoke;
     color: #33c976;
 }
 
 .leftContainer{
     margin: 20px;
+    margin-bottom: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -69,7 +70,7 @@ li:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 10px;
     border: none;
     background: #e9d6a5;
