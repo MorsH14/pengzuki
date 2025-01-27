@@ -129,6 +129,9 @@ li:hover {
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    background-size: contain;
+    /* background-image: none; */
+    height: 600px;
 
     h2 {
       font-size: 45px;
@@ -136,6 +139,7 @@ li:hover {
       color: rgba(0, 0, 0, 0.911);
       width: 100%;
       margin-right: -150px;
+      margin-top: -350px;
     }
   }
 
