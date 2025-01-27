@@ -1,27 +1,26 @@
 .carousel {
-  width: 60%;
+  width: 70%;
   text-align: center;
-  background: #33c976;
+  background: hsla(60, 7%, 59%, 0.4);
   border-radius: 10px;
   margin-right: 20px;
+  padding: 20px;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 0 50px;
+  padding-top: 10px;
 }
 
 .image {
-  width: auto;
-  height: 250px;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
 }
 
 .text {
-  margin-top: 10px;
   font-size: 25px;
   color: #333;
 }
@@ -54,15 +53,17 @@
   .carousel {
     width: 100%;
     margin-bottom: 50px;
+    margin-right: 0;
+
   }
   .content{
     flex-direction: column;
-    padding: 10px;
   }
 
   .image {
     min-height: 200px;
     width: auto;
+    padding-bottom: 10px;
   }
 
   .text {

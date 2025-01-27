@@ -61,9 +61,9 @@ const Submit = () => {
             fontSize: '18px',
             border: 'none',
             borderRadius: '10px',
-            backgroundColor: '#4CAF50',
             color: 'white',
             cursor: 'pointer',
+            backgroundColor: 'black',
           }}
         >
           Submit

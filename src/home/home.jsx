@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./home.css";
 import { HiMiniHomeModern } from "react-icons/hi2";
 import { MdOutlineWorkHistory } from "react-icons/md";
@@ -12,8 +12,7 @@ import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import { GiStakesFence } from "react-icons/gi";
 import "animate.css";
-import { FaPlay } from "react-icons/fa";
-import { FaPause } from "react-icons/fa";
+
 
 const Home = () => {
   const [dropdown, setDropDown] = useState(false);
@@ -36,52 +35,21 @@ const Home = () => {
     { img: "/assets/n2.png", background: "#eec230" },
   ];
 
-  const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    // Auto-play the audio when the component is mounted
-    if (audioRef.current) {
-      audioRef.current.play();
-      setIsPlaying(true);
-    }
-  }, []);
-
-  const togglePlayPause = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
   return (
     <div className="mainContainer" id="home">
       <div className="leftContainer">
-        <div className="logo" style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          width: '100%'
-        }}>
+        <div
+          className="logo"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
           <h1>WELCOME TO THE PENGZUKI CLUB</h1>
-          <div>
-            <audio ref={audioRef} src="/assets/aud.mp3" loop />
-            <button
-              onClick={togglePlayPause}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                border: "none",
-                cursor: "pointer",
-              }}
-            >
-              {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}
-            </button>
-          </div>
+
           <div className="dropDown" onClick={handleClick}>
             <RiMenuFoldLine size={30} />
             <div className={`MediarightContainer ${dropdown ? "show" : ""}`}>
@@ -150,6 +118,19 @@ const Home = () => {
         </div>
         <div className="imgContainer">
           <h2>Its Pengzuki's time!</h2>
+
+          <Link to="/submit">
+            <button
+              className="joinButton"
+              style={{
+                width: "200px",
+                borderRadius: "20px",
+                fontSize: "18px",
+              }}
+            >
+              APPLY FOR AIRDROP
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -228,8 +209,8 @@ const Home = () => {
                   className="marqueDiv"
                   key={index}
                   style={{
-                    width: "250px",
-                    height: "220px",
+                    width: "150px",
+                    height: "150px",
                     borderRadius: "20px",
                     background: item.background,
                     overflow: "hidden",
@@ -251,8 +232,8 @@ const Home = () => {
             <button
               style={{
                 width: "100%",
-                backgroundColor: "#212121",
-                color: "#ffffff",
+                backgroundColor: "#ffffff",
+                color: "rgba(0,0,0,0.808)",
                 padding: "10px",
                 borderRadius: "5px",
                 marginTop: "10px",

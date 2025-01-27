@@ -1,8 +1,9 @@
 .mainContainer{
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 85% 15%;
     background: whitesmoke;
-    color: #33c976;
+    /* color: #33c976; */
+    color: black;
 }
 
 .leftContainer{
@@ -17,7 +18,7 @@
     display: none;
 }
 .rightContainer{
-    background-color: #3A6351;
+    background-color: rgba(0, 0, 0, 0.911);
     font-size: 22px;
     padding: 20px;
     display: flex;
@@ -25,11 +26,12 @@
     position: sticky;
     top: 0;
     height: 100vh;
+    color: whitesmoke;
 }
 .imgContainer{
     width: 99%;
-    background: #d4f0e6;
-    background-image: url(/public/assets/n1.png);
+    background: hsla(60, 7%, 59%, 0.4);
+    /* background-image: url(/public/assets/n1.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +43,7 @@
 
     h2{
         font-size: 80px;
-        color: #dfcc9c;
+        color:  rgba(0, 0,0,0.911);
         padding-left: 70px;
     }
 }
@@ -59,10 +61,10 @@ li{
     margin: 10px 0; 
     border-radius: 5px;
     font-size: 16px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 li:hover{
-    background: #f5e8c7d2;
+    background:  hsla(60, 7%, 59%, 0.4);
 }
 
 .joinButton {
@@ -70,13 +72,13 @@ li:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 10px;
     border: none;
-    background: #e9d6a5;
+    background:  hsla(60, 7%, 59%, 0.4);
     width: 100%;
     cursor: pointer;
-    color: black;
+    color: whitesmoke;
     transition: all 0.3s ease;
   }
   
@@ -96,14 +98,14 @@ li:hover{
   }
 
   .leftSlides{
-    max-width: 550px;
+    max-width: 450px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 350px;
+    height: 280px;
     border-radius: 20px;
-    background: #d4f0e6;
+    background: rgba(0, 0,0,0.911);
     padding: 10px 20px;
   }
 
@@ -118,16 +120,22 @@ li:hover{
     }
     .rightContainer{
         display: none;
+
     }
 
     .imgContainer{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
 
         h2{
             font-size: 45px;
             margin-top: -100px;
             text-align: center;
             margin-left: -50px;
+            color:  rgba(0, 0,0,0.911);
         }
     }
 
@@ -155,7 +163,8 @@ li:hover{
         display: block;
     }
     .MediarightContainer {
-        background-color: #3A6351;
+        background-color: rgba(0, 0, 0, 0.911);
+        color: whitesmoke;
         font-size: 22px;
         padding: 20px;
         display: none; /* Hidden by default */
