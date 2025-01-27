@@ -4,13 +4,15 @@ import { HiMiniHomeModern } from "react-icons/hi2";
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { BiSolidCollection } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
-import { PiTiktokLogoFill } from "react-icons/pi";
 import Carousel from "../carousel/carousel";
 import { RiMenuFoldLine } from "react-icons/ri";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import { GiStakesFence } from "react-icons/gi";
+import { FaDiscord } from "react-icons/fa";
+import { FaAtlassian } from "react-icons/fa6";
+
+
 import "animate.css";
 
 
@@ -46,6 +48,7 @@ const Home = () => {
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
+            gap: '10px'
           }}
         >
           <h1>WELCOME TO THE PENGZUKI CLUB</h1>
@@ -93,13 +96,13 @@ const Home = () => {
 
                 <a href="https://discord.gg/HX5Xvzbp">
                   <li>
-                    <RiInstagramFill />
+                    <FaDiscord />
                     FOLLOW ON DISCORD
                   </li>
                 </a>
                 <a href="https://atlas3.io/project/pengzuki">
                   <li>
-                    <PiTiktokLogoFill />
+                    <FaAtlassian />
                     FOLLOW ON ATLAS
                   </li>
                 </a>
@@ -175,13 +178,13 @@ const Home = () => {
 
             <a href="https://discord.gg/HX5Xvzbp">
               <li>
-                <RiInstagramFill />
+                <FaDiscord />
                 FOLLOW ON DISCORD
               </li>
             </a>
             <a href="https://atlas3.io/project/pengzuki">
               <li>
-                <PiTiktokLogoFill />
+                <FaAtlassian />
                 FOLLOW ON ATLAS
               </li>
             </a>

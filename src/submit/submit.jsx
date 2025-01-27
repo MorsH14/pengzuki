@@ -53,7 +53,6 @@ const Submit = () => {
           }}
         />
         <button
-          className="joinButton"
           onClick={handleSubmit}
           style={{
             marginTop: '10px',
@@ -63,9 +62,9 @@ const Submit = () => {
             borderRadius: '10px',
             color: 'white',
             cursor: 'pointer',
-            backgroundColor: 'black',
+            backgroundColor: '#1a5231b6',
           }}
-        >
+          className="joinButton" >
           Submit
         </button>
       </div>
