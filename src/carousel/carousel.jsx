@@ -5,10 +5,10 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
-    { image: "/assets/n2.png", text: "Picture 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore reiciendis recusandae a incidunt hic, libero possimus, laborum expedita necessitatibus magni nesciunt ex debitis, nihil amet? Nemo, minus velit? Molestias!" },
-    { image: "/assets/n3.png", text: "Picture 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore reiciendis recusandae a incidunt hic, libero possimus, laborum expedita necessitatibus magni nesciunt ex debitis, nihil amet? Nemo, minus velit? Molestias!" },
-    { image: "/assets/n4.png", text: "Picture 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore reiciendis recusandae a incidunt hic, libero possimus, laborum expedita necessitatibus magni nesciunt ex debitis, nihil amet? Nemo, minus velit? Molestias!" },
-    { image: "/assets/n1.png", text: "Picture 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore reiciendis recusandae a incidunt hic, libero possimus, laborum expedita necessitatibus magni nesciunt ex debitis, nihil amet? Nemo, minus velit? Molestias!" },
+    { image: "/assets/n2.png", text: "Pengzuki is a unique collection of NFTs that combines stunning artwork with a compelling narrative. Each Pengzuki is a one-of-a-kind digital collectible, carefully crafted to provide a unique experience for its owner." },
+    { image: "/assets/n3.png", text: "Pengzuki is a unique collection of NFTs that combines stunning artwork with a compelling narrative. Each Pengzuki is a one-of-a-kind digital collectible, carefully crafted to provide a unique experience for its owner." },
+    { image: "/assets/n4.png", text: "Pengzuki is a unique collection of NFTs that combines stunning artwork with a compelling narrative. Each Pengzuki is a one-of-a-kind digital collectible, carefully crafted to provide a unique experience for its owner." },
+    { image: "/assets/n1.png", text: "Pengzuki is a unique collection of NFTs that combines stunning artwork with a compelling narrative. Each Pengzuki is a one-of-a-kind digital collectible, carefully crafted to provide a unique experience for its owner." },
   ];
 
   // Automatically cycle through the list every 5 seconds

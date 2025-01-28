@@ -131,7 +131,7 @@ li:hover {
     gap: 30px;
     background-size: contain;
     /* background-image: none; */
-    height: 600px;
+    /* height: 600px; */
 
     h2 {
       font-size: 45px;
