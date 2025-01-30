@@ -94,13 +94,13 @@ const Home = () => {
                   </li>
                 </a>
 
-                <a href="https://discord.gg/HX5Xvzbp">
+                <a href="https://discord.gg/pengzuki">
                   <li>
                     <FaDiscord />
                     FOLLOW ON DISCORD
                   </li>
                 </a>
-                <a href="https://discord.gg/pengzuki">
+                <a href="https://atlas3.io/project/pengzuki">
                   <li>
                     <FaAtlassian />
                     FOLLOW ON ATLAS
@@ -176,13 +176,13 @@ const Home = () => {
               </li>
             </a>
 
-            <a href="https://discord.gg/HX5Xvzbp">
+            <a href="https://discord.gg/pengzuki">
               <li>
                 <FaDiscord />
                 FOLLOW ON DISCORD
               </li>
             </a>
-            <a href="https://discord.gg/pengzuki">
+            <a href="https://atlas3.io/project/pengzuki">
               <li>
                 <FaAtlassian />
                 FOLLOW ON ATLAS
