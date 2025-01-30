@@ -100,7 +100,7 @@ const Home = () => {
                     FOLLOW ON DISCORD
                   </li>
                 </a>
-                <a href="https://atlas3.io/project/pengzuki">
+                <a href="https://discord.gg/pengzuki">
                   <li>
                     <FaAtlassian />
                     FOLLOW ON ATLAS
@@ -182,7 +182,7 @@ const Home = () => {
                 FOLLOW ON DISCORD
               </li>
             </a>
-            <a href="https://atlas3.io/project/pengzuki">
+            <a href="https://discord.gg/pengzuki">
               <li>
                 <FaAtlassian />
                 FOLLOW ON ATLAS
